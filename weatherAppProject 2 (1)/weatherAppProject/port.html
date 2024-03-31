@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 60px 20px;
+            min-height: 100vh;
+            padding-top: 80px; /* Offset for fixed navbar */
+        }
+        #home { background-color: #f3f3f3; }
+        #about { background-color: #ddd; }
+        #skills { background-color: #c7c7c7; }
+        #projects { background-color: #b1b1b1; }
+        #contact { background-color: #9b9b9b; }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Scroll down to see more.</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>This is a placeholder for the about section. Describe who you are, your background, and what you do.</p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <p>List your skills here.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <p>Showcase your projects here. Describe each project and what it involved.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<footer>
+    <p>Footer content here.</p>
+</footer>
+
+</body>
+</html>
